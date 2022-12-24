@@ -7,8 +7,11 @@ I was trying to figure out why my game streaming setup (over Moonlight) on my St
 ## Usage
 Edit `gs-ping.sh` and make sure the `moonlight_ip` is the IP of your local machine running Nvidia GameStream and `ping_threshold` is set to the threshold (in milliseconds) you want the script to use to notify you of an issue by beeping at you and showing the ping result in red. 
 
+After that:
+
 ```
 chmod +x gs-ping.sh
 ./gs-ping.sh
 ```
 
+>**NOTE:** You may have to enable advanced sharing options on the Moonlight PC if it is running Windows to allow ICMP ping responses
