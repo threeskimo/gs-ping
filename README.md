@@ -5,7 +5,7 @@ A bash script to continuously ping a local IP and display the milliseconds (ms) 
 I was trying to figure out why my game streaming setup (over Moonlight) on my Steam Deck wasn't as smooth as it used to be and this script helped me determine that my issue was due to network latency between my game streaming machine and my Steam Deck, as it would dip above 25ms occassionally causing noticable stutters.  I did this by loaded Moonlight on my Deck, running this script, and then I watched for stuttering in-game.  Then I viewed the results of the script to see if my latency had jumped, which would signify a network issue.
 
 ## Usage
-Edit `gs-ping.sh` and make sure the `moonlight_ip` is the IP of your local machine running Nvidia GameStream and `ping_threshold` is set to the threshold (in milliseconds) you want the script to use to notify you of an issue by beeping at you and showing the ping result in red.  For me, 25ms was a good threshold to use since everything above that seemed to cause my game to stutter. 
+Edit `gs-ping.sh` and make sure the `moonlight_ip` is the IP of your local machine running Nvidia GameStream and `ping_threshold` is set to the threshold (in milliseconds) you want the script to use to notify you of an issue by beeping at you and showing the ping result in red.  For me, 25ms was a good threshold to use as that was when I started to notice the most stuttering in-game. 
 
 After that:
 
