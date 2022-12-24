@@ -14,4 +14,4 @@ chmod +x gs-ping.sh
 ./gs-ping.sh
 ```
 
->**NOTE:** You may have to enable advanced sharing options on the PC running Moonlight if it is running Windows to allow ICMP ping responses
+>**NOTE:** If your PC running Moonlight is Windows, you may have to enable advanced sharing options to allow ICMP ping responses.
