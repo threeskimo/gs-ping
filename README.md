@@ -1,4 +1,4 @@
-# gs-ping.sh / bat
+# gs-ping.sh / gs-bing.bat
 A bash script (and bat file) to continuously ping a local IP and display the milliseconds (ms) of latency.  This script will play a warning sound if the ms of latency is above a threshold (set in script as 25ms by default).
 
 ## Why?
