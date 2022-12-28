@@ -1,17 +1,17 @@
 @echo off
 
 ::CHANGE THESE :::::::::::::::::::::::::::::::::::
-set IP=8.8.8.8
-set threshold=20
+set moonlight_ip=192.168.1.185
+set ping_threshold=25
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :loop
-ping %IP% -n 1 >nul
+ping %moonlight_ip% -n 1 >nul
 
-for /f "tokens=6 delims=time=" %%G in ('ping %IP% -n 1 ^| find "time="') do (
+for /f "tokens=6 delims=time=" %%G in ('ping %moonlight_ip% -n 1 ^| find "time="') do (
   set time=%%G
   
-  if %time% GEQ %threshold% (
+  if %time% GEQ %ping_threshold% (
     echo Ping: %time% ms
 	rundll32 user32.dll,MessageBeep
   ) else (
