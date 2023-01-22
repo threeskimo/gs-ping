@@ -1,9 +1,23 @@
 @echo off
 
+IF NOT "%1"=="" (
+	set moonlight_ip=%1
+) else (
+	set moonlight_ip=192.168.1.137
+)
+
+IF NOT "%2"=="" (
+	set ping_threshold=%2
+) else (
+	set ping_threshold=25
+)
+
 ::CHANGE THESE :::::::::::::::::::::::::::::::::::
-set moonlight_ip=192.168.1.185
-set ping_threshold=25
+:: set moonlight_ip=192.168.1.137
+:: set ping_threshold=25
 :::::::::::::::::::::::::::::::::::::::::::::::::::
+
+echo Pinging %moonlight_ip% with threshold: %ping_threshold%
 
 :loop
 ping %moonlight_ip% -n 1 >nul
