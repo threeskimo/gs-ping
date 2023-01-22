@@ -14,6 +14,6 @@ chmod +x gs-ping.sh
 ./gs-ping.sh
 ```
 
-`gs-ping.bat` also allows the user to feed in `<ip>` and `<threshold>` parameters.  For example `gs-ping.bat 192.168.1.185 25` performs a latency test on ip 192.168.1.185 and will detect any issues above 25ms of latency.
+`gs-ping.bat` also allows the user to feed in `<ip>` and `<threshold>` parameters.  For example `gs-ping.bat 192.168.1.185 25` performs a latency test on IP 192.168.1.185 and will detect any issues above 25ms of latency.
 
 >**NOTE:** If your PC running Moonlight is Windows, you may have to enable advanced sharing options to allow ICMP ping responses.
