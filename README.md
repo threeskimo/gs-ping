@@ -1,5 +1,5 @@
 # gs-ping.sh / gs-bing.bat
-A bash (and bat) script to continuously ping a local IP and display the milliseconds (ms) of latency.  This script will play a warning sound if the ms of latency is above a threshold (set in script as 25ms by default).
+A bash (and batch) script to continuously ping a local IP and display the milliseconds (ms) of latency.  This script will play a warning sound if the ms of latency is above a threshold (set in script as 25ms by default).
 
 ## Why?
 I was trying to figure out why my game streaming setup (over Moonlight) on my Steam Deck wasn't as smooth as it used to be and this script helped me determine that my steam degradation issue was due to network latency between my game streaming machine and my Steam Deck, as it would dip above 25ms occassionally causing noticable stutters.  I did this by loaded Moonlight on my Deck, running this script on the Deck, and then I watched for stuttering in-game.  I then viewed the results of the script to see if my latency had jumped, which would signify a network issue instead of an issue involving something else like encoding/etc.
