@@ -7,8 +7,9 @@ moonlight_ip="192.168.1.185"
 ping_threshold=25
 #---------------------------------
 
-RED='\033[0;31m' # Red
-NC='\033[0m'     # No Color
+RED='\033[0;31m' 	# Red
+GREEN='\033[0;32m'	# Green
+NC='\033[0m'     	# No Color
 
 while true; do
     # Ping the Moonlight Server IP address (config'd above) and extract the "time=" value
@@ -26,11 +27,11 @@ while true; do
             # Check if the "time=" value is above the ping threshold
             if (( ${time%.*} >= $ping_threshold )); then
                 # Trigger sound and show ping in red if the "time=" value is above ping threshold
-                printf "${RED}[-] Ping = ${time} ms\n${RED}"
+                printf "${RED}[-] Ping = ${time} ms\n${NC}"
                 printf "\a"
             else
                 # If below ping threshold, just show ping data
-                printf "${NC}[+] Ping = ${time} ms\n"
+                printf "${GREEN}[+] Ping = ${time} ms\n${NC}"
             fi
         else
             # Handle cases where the time value is missing from the ping output
